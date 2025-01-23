@@ -43,4 +43,13 @@ public class Post {
 		this.contents.updateContent(updatedContent);
 		this.state = state;
 	}
+
+	public int getLikeCounter() {
+		return likeCounter.getCount();
+	}
+
+	public String getContents() {
+		return contents.getContentText();
+	}
+
 }

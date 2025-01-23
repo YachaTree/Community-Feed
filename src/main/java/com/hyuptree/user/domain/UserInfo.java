@@ -12,6 +12,4 @@ public class UserInfo {
 		this.username = username;
 		this.profileImageUrl = profileImageUrl;
 	}
-
-
 }
