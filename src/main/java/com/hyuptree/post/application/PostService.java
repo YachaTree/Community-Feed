@@ -25,6 +25,6 @@ public class PostService {
 	}
 
 	public Post getPost(Long postId) {
-		return postRepository.findById(postId);
+		return postRepository.findById(postId).orElseThrow(() -> new IllegalArgumentException("Post not found"));
 	}
 }
